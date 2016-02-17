@@ -1,0 +1,6 @@
+
+language: c
+compiler: gcc
+
+// Build and test
+./configure && make && make test
