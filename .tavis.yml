@@ -1,0 +1,10 @@
+language: c
+compiler: gcc
+
+script: make && make check
+
+notification:
+	email:
+		- for.teketel@gmail.com
+	on_success: change
+	on_failure: always
