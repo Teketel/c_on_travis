@@ -1,6 +1,10 @@
-
 language: c
 compiler: gcc
 
-// Build and test
-./configure && make && make test
+script: make && make check
+
+notification:
+	email:
+		- for.teketel@gmail.com
+	on_success: change
+	on_failure: always
