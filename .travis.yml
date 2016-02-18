@@ -2,7 +2,8 @@ language: c
 compiler: gcc
 
 script: 
-    - cd Teketel/c_on_travis
+    - autoreconf -iv
+    - /configure
     - make && make check
 
 notification:
