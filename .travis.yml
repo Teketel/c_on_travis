@@ -3,7 +3,7 @@ compiler: gcc
 
 script: 
     - autoreconf -iv
-    - /configure
+    - ./configure
     - make && make check
 
 notification:
