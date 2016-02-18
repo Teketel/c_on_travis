@@ -1,7 +1,9 @@
 language: c
 compiler: gcc
 
-script: make && make check
+script: 
+    - cd Teketel/c_on_travis
+    - make && make check
 
 notification:
     email:
